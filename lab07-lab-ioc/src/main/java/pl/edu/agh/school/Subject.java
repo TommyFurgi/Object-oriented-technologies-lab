@@ -19,7 +19,7 @@ public class Subject implements Serializable {
 	private final List<Mark> marks = new ArrayList<>();
 	private final List<Mark> semesterMarks = new ArrayList<>();
 	private final List<Lesson> lessons = new ArrayList<>();
-	private Logger logger;
+	private transient  Logger logger;
 
 	private Teacher _teacher;
 

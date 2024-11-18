@@ -17,8 +17,7 @@ public class SchoolClass implements Serializable {
 
 	private final List<Student> students = new ArrayList<>();
 	private final List<Subject> subjects = new ArrayList<>();
-
-	private final Logger logger;
+	private transient Logger logger;
 
 	@Inject
 	public SchoolClass(Logger logger) {
